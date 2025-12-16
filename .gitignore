@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.dist-info/
+.env
+.venv/
+venv/
+.env*
+.python-version
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Airflow runtime
+airflow/logs/
+airflow/logs/**
+airflow/dag_processor_manager/
+airflow/scheduler/
+
+# Airflow data outputs
+airflow/raw_data/
+airflow/raw_data/**
+airflow/dags/data/
+airflow/dags/data/**
+
+# Airflow secrets/credentials
+airflow/google_credentials.json
+**/google_credentials.json
+
+# Plugins caches
+airflow/dags/plugins/__pycache__/
+airflow/dags/plugins/**/__pycache__/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Test/cache
+.pytest_cache/
+*.log
+*.tmp
+*.swp
+
+# Docker
+**/.dockerignore
+**/docker-compose.override.yml
+
+# Archivos de aprendizaje
+create_dag_with_python_operator.py
+dag_with_taskflow_api.py
+our_first_dag.py
